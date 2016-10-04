@@ -1,0 +1,11 @@
+options(repos=c(CRAN="https://cran.cnr.berkeley.edu"))
+
+lsos <- function(N=20) {
+    obj <- ls(envir=.GlobalEnv)
+    names(obj) <- obj
+    sizes <- sapply(obj, function(x) {pryr::object_size(get(x))})
+    `%>%` <- dplyr::`%>%`
+    dplyr::data_frame(names=obj, sizes=sizes) %>%
+        dplyr::arrange(desc(sizes)) %>%
+        head(N)
+}

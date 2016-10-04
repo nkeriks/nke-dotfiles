@@ -1,0 +1,9 @@
+# note that need to source this in .zshrc (not included there to not conflict
+# with oh-my-zsh)
+
+alias ls='ls -aG'
+alias lt='ls -lrt'
+alias lss='ls -Ssr'
+alias tmls='tmux ls'
+alias tm='tmux attach-session -t'
+alias rm='rm -i'
