@@ -1,5 +1,28 @@
-options(repos=c(CRAN="https://cran.cnr.berkeley.edu"))
+options(
+    repos=c(CRAN="https://cran.cnr.berkeley.edu"),
+    width=150,
+    menu.graphics=FALSE, # no tk menu?
+    prompt="> ",
+    continue="... ",
+    )
 
+## autocomplete inside library()
+utils::rc.settings(ipck=TRUE)
+
+
+## see https://github.com/tonyfischetti/myR/blob/master/aR.profile for many of these
+
+## List objects and classes (from @_inundata, mod by ateucher)
+lsa <- function() {
+    obj_type <- function(x) class(get(x, envir = .GlobalEnv)) # define environment
+    foo = data.frame(sapply(ls(envir = .GlobalEnv), obj_type))
+    foo$object_name = rownames(foo)
+    names(foo)[1] = "class"
+    names(foo)[2] = "object"
+    foo
+}
+
+# list object sizes
 lsos <- function(N=20) {
     obj <- ls(envir=.GlobalEnv)
     names(obj) <- obj
@@ -9,3 +32,44 @@ lsos <- function(N=20) {
         dplyr::arrange(desc(sizes)) %>%
         head(N)
 }
+
+
+
+## List all functions in a package (also from @_inundata)
+lsp <-function(package, all.names = FALSE, pattern) {
+    package <- deparse(substitute(package))
+    ls(
+        pos = paste("package", package, sep = ":"),
+        all.names = all.names,
+        pattern = pattern
+    )
+}
+
+
+## ht==headtail, i.e., show the first and last N items of an object
+ht <- function(d, N=10) rbind(head(d,N),tail(d,N))
+
+
+## Open Finder to the current directory on mac
+macopen <- function(...) if(Sys.info()[1]=="Darwin") system("open .")
+
+
+.First <- function() {
+    if(interactive()){
+        # puts a timestamp in my command history
+        # file if R_HISTFILE is in environment
+        utils::timestamp(,prefix=paste("##------ [",getwd(),"] ",sep=""))
+    }
+}
+
+
+.Last <- function(){
+    if(interactive()){
+        hist_file <- Sys.getenv("R_HISTFILE")
+            if(hist_file=="") {
+                hist_file <- "~/.R_eternal_history"
+            }
+        savehistory(hist_file)
+    }
+}
+

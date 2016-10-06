@@ -27,5 +27,6 @@ tmux
 wget
 xz
 gsl
-
 terminal-notifier
+# for copy and paste in tmux
+reattach-to-user-namespace
