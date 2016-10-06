@@ -3,7 +3,7 @@ options(
     width=150,
     menu.graphics=FALSE, # no tk menu?
     prompt="> ",
-    continue="... ",
+    continue="... "
     )
 
 ## autocomplete inside library()
