@@ -1,15 +1,35 @@
 tidyverse
-survival
+magrittr
 MASS
+
+# regression packages
+survival
 lme4
-DT
 effects
 rms
+flexsurv
+
+# JS/HTML output 
+DT
 shiny
 rmarkdown
 knitr
+leaflet
+dygraphs
+plotly
+rbokeh
+networkD3
+DiagrammeR
+
+
+# web tools
 RCurl
+httr
 rstudioapi
 packrat
 RJSONIO
 rsconnect
+devtools
+aws.s3
+
+slackr

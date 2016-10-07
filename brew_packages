@@ -27,6 +27,14 @@ tmux
 wget
 xz
 gsl
+libssh2
+glpk
+# need to get Cairo R library working
+pango
+
+# interface into system notifier
 terminal-notifier
+
 # for copy and paste in tmux
 reattach-to-user-namespace
+
