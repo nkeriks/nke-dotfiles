@@ -7,5 +7,6 @@ alias lss='ls -Ssr'
 alias tmls='tmux ls'
 alias tm='tmux attach-session -t'
 alias rm='rm -i'
+alias cp='cp -i'
 
 export R_HISTFILE='~/.R_eternal_history'

@@ -29,6 +29,7 @@ xz
 gsl
 libssh2
 glpk
+
 # need to get Cairo R library working
 pango
 
@@ -38,3 +39,11 @@ terminal-notifier
 # for copy and paste in tmux
 reattach-to-user-namespace
 
+# tensorflow - needs a lot of other stuff, but includes
+bazel
+swig
+# brew cask install java
+# brew cask install cuda
+
+# for R database packages
+mariadb-connector-c

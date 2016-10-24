@@ -6,8 +6,8 @@ for i in dotfiles/*; do
     if [ -e $dest ]
     then
         echo "skipping $dest <- $full"
-    else 
+    else
         echo "linking $dest <- $full"
-        ln -s $full $dest
+        ln -s "$full" "$dest"
     fi
 done

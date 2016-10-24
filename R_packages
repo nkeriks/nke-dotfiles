@@ -1,6 +1,7 @@
 tidyverse
 magrittr
 MASS
+ROCR
 
 # regression packages
 survival
@@ -8,8 +9,10 @@ lme4
 effects
 rms
 flexsurv
+epiDisplay
+rstan
 
-# JS/HTML output 
+# JS/HTML output
 DT
 shiny
 rmarkdown
@@ -20,6 +23,7 @@ plotly
 rbokeh
 networkD3
 DiagrammeR
+bookdown
 
 
 # web tools
@@ -29,7 +33,37 @@ rstudioapi
 packrat
 RJSONIO
 rsconnect
-devtools
-aws.s3
-
 slackr
+# aws.s3 needs dev xml2
+cloudyr/aws.s3
+hadley/xml2
+
+# dev
+devtools
+hadley/lineprof
+Rcpp
+drat
+
+#ML
+# xgboost -- CRAN version is old, need to hit a drat archive
+gbm
+glmnet
+lars
+e1071
+nnet
+rstudio/tensorflow
+lasso2
+randomForest
+grplasso
+penalized
+ahaz
+caret
+sparklyr
+
+
+# DB
+RSQLite
+RPostgreSQL
+RMySQL
+DBI
+bigrquery

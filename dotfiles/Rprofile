@@ -3,7 +3,8 @@ options(
     width=150,
     menu.graphics=FALSE, # no tk menu?
     prompt="> ",
-    continue="... "
+    continue="... ",
+    max.print=5000
     )
 
 ## autocomplete inside library()
@@ -63,12 +64,12 @@ macopen <- function(...) if(Sys.info()[1]=="Darwin") system("open .")
 }
 
 
-.Last <- function(){
-    if(interactive()){
+.Last <- function() {
+    if (interactive()) {
         hist_file <- Sys.getenv("R_HISTFILE")
-            if(hist_file=="") {
-                hist_file <- "~/.R_eternal_history"
-            }
+        if (hist_file == "") {
+            hist_file <- "~/.R_eternal_history"
+        }
         savehistory(hist_file)
     }
 }
