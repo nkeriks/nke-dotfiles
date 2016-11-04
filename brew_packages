@@ -47,3 +47,6 @@ swig
 
 # for R database packages
 mariadb-connector-c
+
+# for pdftools
+poppler

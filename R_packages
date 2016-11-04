@@ -12,7 +12,7 @@ flexsurv
 epiDisplay
 rstan
 
-# JS/HTML output
+# plot/JS/HTML output
 DT
 shiny
 rmarkdown
@@ -24,6 +24,8 @@ rbokeh
 networkD3
 DiagrammeR
 bookdown
+ggrepel
+GGally
 
 
 # web tools
@@ -37,12 +39,14 @@ slackr
 # aws.s3 needs dev xml2
 cloudyr/aws.s3
 hadley/xml2
+pdftools
 
 # dev
 devtools
 hadley/lineprof
 Rcpp
 drat
+optparse
 
 #ML
 # xgboost -- CRAN version is old, need to hit a drat archive
@@ -59,7 +63,8 @@ penalized
 ahaz
 caret
 sparklyr
-
+Ckmeans.1d.dp
+FeatureHashing
 
 # DB
 RSQLite
@@ -67,3 +72,7 @@ RPostgreSQL
 RMySQL
 DBI
 bigrquery
+
+# bioconductor
+bioconductor:rhdf5
+bioconductor:Rgraphviz
