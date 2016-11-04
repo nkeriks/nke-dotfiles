@@ -1,0 +1,12 @@
+[core]
+    # only use less if more than 1 page of data
+    pager=less -X -F
+
+[user]
+    email=nick@calicolabs.com
+    name=Nick Eriksson
+
+[alias]
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
