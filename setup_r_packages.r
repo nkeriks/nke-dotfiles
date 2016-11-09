@@ -33,7 +33,7 @@ installer <- function(pkg_string) {
         }
         biocLite(stringr::str_split_fixed(pkg_string, ':', 2)[1,2])
     } else if (stringr::str_detect(pkg_string, '/')) {
-        devtools::install_github(package_string)
+        devtools::install_github(pkg_string)
     } else {
         install.packages(pkg_string)
     }

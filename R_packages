@@ -65,6 +65,9 @@ caret
 sparklyr
 Ckmeans.1d.dp
 FeatureHashing
+hong-revo/glmnetUtils
+eddelbuettel/RcppAnnoy
+bit
 
 # DB
 RSQLite
