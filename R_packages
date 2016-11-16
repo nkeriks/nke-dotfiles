@@ -47,6 +47,10 @@ hadley/lineprof
 Rcpp
 drat
 optparse
+# pretty print functions
+gaborcsardi/prettycode
+# debugging - saves environment on error
+errorizer
 
 #ML
 # xgboost -- CRAN version is old, need to hit a drat archive
@@ -68,6 +72,7 @@ FeatureHashing
 hong-revo/glmnetUtils
 eddelbuettel/RcppAnnoy
 bit
+biglasso
 
 # DB
 RSQLite
@@ -79,3 +84,12 @@ bigrquery
 # bioconductor
 bioconductor:rhdf5
 bioconductor:Rgraphviz
+bioconductor:topGO
+
+# other
+nycflights13
+Lahman
+anytime
+
+# gwas
+manhattanly
