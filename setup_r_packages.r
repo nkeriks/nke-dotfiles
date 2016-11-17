@@ -16,8 +16,13 @@ is_installed <- function(pkg_names) {
 pkgs <- read.table("R_packages", stringsAsFactors=FALSE)
 names(pkgs) <- 'package_string'
 
+# wesm/feather/R --> feather
+get_name <- function(nm) {
+    ifelse(length(nm) == 1, nm, nm[2])
+}
+
 pkgs <- pkgs %>%
-    dplyr::mutate(package_name=unlist(lapply(stringr::str_split(package_string, '/|:'), tail, 1)),
+    dplyr::mutate(package_name=sapply(stringr::str_split(package_string, '/|:'), get_name),
            need_install=!is_installed(package_name))
 
 
