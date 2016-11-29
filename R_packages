@@ -26,7 +26,7 @@ DiagrammeR
 bookdown
 ggrepel
 GGally
-
+dgrtwo/gganimate
 
 # web tools
 RCurl
@@ -47,10 +47,11 @@ hadley/lineprof
 Rcpp
 drat
 optparse
-# pretty print functions
+# pretty print code
 gaborcsardi/prettycode
 # debugging - saves environment on error
 errorizer
+eddelbuettel/RProtoBuf
 
 #ML
 # xgboost -- CRAN version is old, need to hit a drat archive
@@ -80,11 +81,13 @@ RPostgreSQL
 RMySQL
 DBI
 bigrquery
+wesm/feather/R
 
 # bioconductor
 bioconductor:rhdf5
 bioconductor:Rgraphviz
 bioconductor:topGO
+bioconductor:org.Hs.eg.db
 
 # other
 nycflights13
@@ -93,4 +96,3 @@ anytime
 
 # gwas
 manhattanly
-wesm/feather/R
