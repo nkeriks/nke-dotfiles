@@ -40,6 +40,8 @@ slackr
 cloudyr/aws.s3
 hadley/xml2
 pdftools
+rvest
+XML
 
 # dev
 devtools
@@ -90,6 +92,10 @@ bioconductor:topGO
 nycflights13
 Lahman
 anytime
+
+# text
+stringdist
+tidytext
 
 # gwas
 manhattanly
