@@ -52,7 +52,11 @@ ht <- function(d, N=10) rbind(head(d,N),tail(d,N))
 
 
 ## Open Finder to the current directory on mac
-macopen <- function(...) if(Sys.info()[1]=="Darwin") system("open .")
+macopen <- function(what='.') {
+    if (Sys.info()[1]=="Darwin") {
+        system(sprintf('open "%s"', what))
+    }
+}
 
 
 .First <- function() {
@@ -63,6 +67,15 @@ macopen <- function(...) if(Sys.info()[1]=="Darwin") system("open .")
     }
 }
 
+.savehistory <- function(hist_file) {
+    # savehistory overwrites :(
+    try({
+          tmpfile <- tempfile()
+          savehistory(tmpfile)
+          file.append(hist_file, tmpfile)
+          unlink(tmpfile)
+        })
+}
 
 .Last <- function() {
     if (interactive()) {
@@ -70,7 +83,7 @@ macopen <- function(...) if(Sys.info()[1]=="Darwin") system("open .")
         if (hist_file == "") {
             hist_file <- "~/.R_eternal_history"
         }
-        savehistory(hist_file)
+        .savehistory(hist_file)
     }
 }
 
