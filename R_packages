@@ -42,6 +42,7 @@ hadley/xml2
 pdftools
 rvest
 XML
+cloudyr/googleCloudStorageR
 
 # dev
 devtools
@@ -76,6 +77,12 @@ hong-revo/glmnetUtils
 eddelbuettel/RcppAnnoy
 bit
 biglasso
+# mixed integer linear programs
+dirkschumacher/ompr
+dirkschumacher/ompr.roi
+ROI
+ROI.plugin.glpk
+
 
 # DB
 RSQLite
@@ -90,6 +97,7 @@ bioconductor:rhdf5
 bioconductor:Rgraphviz
 bioconductor:topGO
 bioconductor:org.Hs.eg.db
+bioconductor:recount
 
 # other
 nycflights13
