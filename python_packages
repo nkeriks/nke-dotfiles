@@ -1,0 +1,20 @@
+# pip install -r python_packages
+
+numpy
+scipy
+scikit-learn
+cython
+pandas
+tensorflow
+boto
+gensim
+GDAL
+flake8
+Cython
+protobuf
+statsmodels
+nbformat
+nbconvert
+jupyter
+lxml
+requests

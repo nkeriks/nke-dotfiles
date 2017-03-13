@@ -2,6 +2,7 @@ tidyverse
 magrittr
 MASS
 ROCR
+doMC
 
 # regression packages
 survival
@@ -27,6 +28,7 @@ bookdown
 ggrepel
 GGally
 dgrtwo/gganimate
+hafen/trelliscopejs
 
 # web tools
 RCurl
@@ -98,6 +100,8 @@ bioconductor:Rgraphviz
 bioconductor:topGO
 bioconductor:org.Hs.eg.db
 bioconductor:recount
+bioconductor:GWASTools
+bioconductor:SNPRelate
 
 # other
 nycflights13

@@ -1,3 +1,7 @@
+execute pathogen#infect()
+
+
+" copy & paste on mac
 nmap <F3> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F3> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <F4> :.w !pbcopy<CR><CR>
