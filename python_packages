@@ -8,7 +8,6 @@ pandas
 tensorflow
 boto
 gensim
-GDAL
 flake8
 Cython
 protobuf

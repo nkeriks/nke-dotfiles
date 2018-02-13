@@ -59,32 +59,38 @@ errorizer
 eddelbuettel/RProtoBuf
 
 #ML
-# xgboost -- CRAN version is old, need to hit a drat archive
+# note, CRAN xgboost version is often old, need to hit a drat archive
+xgboost
 gbm
-glmnet
 lars
 e1071
 nnet
 rstudio/tensorflow
-lasso2
 randomForest
-grplasso
 penalized
 ahaz
 caret
 sparklyr
 Ckmeans.1d.dp
 FeatureHashing
-hong-revo/glmnetUtils
 eddelbuettel/RcppAnnoy
 bit
+yardstick
+rsample
+infer
+
+#lasso, etc
+glmnet
+lasso2
+grplasso
+hong-revo/glmnetUtils
 biglasso
+
 # mixed integer linear programs
 dirkschumacher/ompr
 dirkschumacher/ompr.roi
 ROI
 ROI.plugin.glpk
-
 
 # DB
 RSQLite
