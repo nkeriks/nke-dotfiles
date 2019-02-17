@@ -27,8 +27,8 @@ DiagrammeR
 bookdown
 ggrepel
 GGally
-dgrtwo/gganimate
-hafen/trelliscopejs
+gganimate
+trelliscopejs
 
 # web tools
 RCurl
@@ -38,25 +38,24 @@ packrat
 RJSONIO
 rsconnect
 slackr
-# aws.s3 needs dev xml2
-cloudyr/aws.s3
-hadley/xml2
+aws.s3
+xml2
 pdftools
 rvest
 XML
-cloudyr/googleCloudStorageR
+googleCloudStorageR
 
 # dev
 devtools
-hadley/lineprof
+profvis
 Rcpp
 drat
 optparse
 # pretty print code
-gaborcsardi/prettycode
+prettycode
 # debugging - saves environment on error
 errorizer
-eddelbuettel/RProtoBuf
+RProtoBuf
 
 #ML
 # note, CRAN xgboost version is often old, need to hit a drat archive
@@ -65,7 +64,7 @@ gbm
 lars
 e1071
 nnet
-rstudio/tensorflow
+tensorflow
 randomForest
 penalized
 ahaz
@@ -73,7 +72,7 @@ caret
 sparklyr
 Ckmeans.1d.dp
 FeatureHashing
-eddelbuettel/RcppAnnoy
+RcppAnnoy
 bit
 yardstick
 rsample
@@ -83,12 +82,12 @@ infer
 glmnet
 lasso2
 grplasso
-hong-revo/glmnetUtils
+glmnetUtils
 biglasso
 
 # mixed integer linear programs
-dirkschumacher/ompr
-dirkschumacher/ompr.roi
+ompr
+ompr.roi
 ROI
 ROI.plugin.glpk
 
@@ -98,16 +97,16 @@ RPostgreSQL
 RMySQL
 DBI
 bigrquery
-wesm/feather/R
+feather
 
-# bioconductor
-bioconductor:rhdf5
-bioconductor:Rgraphviz
-bioconductor:topGO
-bioconductor:org.Hs.eg.db
-bioconductor:recount
-bioconductor:GWASTools
-bioconductor:SNPRelate
+## bioconductor
+#bioconductor:rhdf5
+#bioconductor:Rgraphviz
+#bioconductor:topGO
+#bioconductor:org.Hs.eg.db
+#bioconductor:recount
+#bioconductor:GWASTools
+#bioconductor:SNPRelate
 
 # other
 nycflights13
