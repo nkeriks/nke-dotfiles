@@ -1,7 +1,7 @@
 # note that need to source this in .zshrc (not included there to not conflict
 # with oh-my-zsh)
 
-alias ls='ls -aG'
+alias ls='ls -aG --color'
 alias lt='ls -lrt'
 alias lss='ls -Ssr'
 alias tmls='tmux ls'
@@ -10,3 +10,13 @@ alias rm='rm -i'
 alias cp='cp -i'
 
 export R_HISTFILE='~/.R_eternal_history'
+
+# catch pip installed execuatables
+export PATH=$PATH:~/.local/bin
+alias dus='du -h | sort -hr | less'
+alias py36='source ~/virtualenvs/py36/bin/activate'
+
+# VLC doesn't like relative paths
+function vv {
+    vlc "file://`readlink -f $1`"
+}
