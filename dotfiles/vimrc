@@ -1,12 +1,20 @@
 execute pathogen#infect()
 
 
-" copy & paste on mac
-nmap <F3> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-imap <F3> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-nmap <F4> :.w !pbcopy<CR><CR>
-vmap <F4> :w !pbcopy<CR><CR>
+if has('macunix')
+    " copy & paste on mac
+    nmap <F3> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+    imap <F3> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+    nmap <F4> :.w !pbcopy<CR><CR>
+    vmap <F4> :w !pbcopy<CR><CR>
+endif
 
+if has('unix')
+    nmap <F3> :set paste<CR>:r !xclip -selection c -o<CR>:set nopaste<CR>
+    imap <F3> <Esc>:set paste<CR>:r !xclip -selection c -o<CR>:set nopaste<CR>
+    nmap <F4> :.w !xclip -sel c -i<CR><CR>
+    vmap <F4> :w !xclip -sel c -i<CR><CR>
+endif
 
 
 " jump to the last position when reopening a file
