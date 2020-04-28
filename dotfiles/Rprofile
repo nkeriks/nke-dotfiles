@@ -1,10 +1,11 @@
 options(
-    repos=c(CRAN="https://cran.cnr.berkeley.edu"),
+    repos=c(CRAN="https://cran.rstudio.com"),
     width=150,
     menu.graphics=FALSE, # no tk menu?
     prompt="> ",
     continue="... ",
-    max.print=5000
+    max.print=5000,
+    Ncpus=parallel::detectCores()
     )
 
 ## autocomplete inside library()
