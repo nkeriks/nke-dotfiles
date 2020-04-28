@@ -1,7 +1,11 @@
 # note that need to source this in .zshrc (not included there to not conflict
 # with oh-my-zsh)
 
-alias ls='ls -aG --color'
+# -a = all
+# -G = no group in -l
+# -F = show type
+# -N = no quotes
+alias ls='ls -aGFN --color'
 alias lt='ls -lrt'
 alias lss='ls -Ssr'
 alias tmls='tmux ls'
@@ -20,3 +24,5 @@ alias py36='source ~/virtualenvs/py36/bin/activate'
 function vv {
     vlc "file://`readlink -f $1`"
 }
+
+alias mv='mv -i'
