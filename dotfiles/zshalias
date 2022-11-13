@@ -15,10 +15,10 @@ alias cp='cp -i'
 
 export R_HISTFILE='~/.R_eternal_history'
 
-# catch pip installed execuatables
-export PATH=$PATH:~/.local/bin
+# catch pip installed executables in .local/bin
+export PATH=$PATH:~/.local/bin:~/bin
 alias dus='du -h | sort -hr | less'
-alias py36='source ~/virtualenvs/py36/bin/activate'
+alias py3='source ~/virtualenvs/py310/bin/activate'
 
 # VLC doesn't like relative paths
 function vv {
@@ -26,3 +26,9 @@ function vv {
 }
 
 alias mv='mv -i'
+export EDITOR='vim'
+
+# add line in /etc/sudoers to suspend without passwords
+alias pms='sudo pm-suspend'
+
+alias myip='curl ipinfo.io'
