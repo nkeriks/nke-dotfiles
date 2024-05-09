@@ -87,3 +87,10 @@ endfunction
 
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
+
+" Makes a python list from selected lines
+" asdf
+" some thing
+" -->
+" ["asdf", "some thing",]
+command -range=% Comma '<,'>s/^\s*\zs.*/"&",/|'[,']j|s//[&]/
