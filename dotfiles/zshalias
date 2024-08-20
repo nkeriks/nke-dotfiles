@@ -18,6 +18,7 @@ export R_HISTFILE='~/.R_eternal_history'
 # catch pip installed executables in .local/bin
 export PATH=$PATH:~/.local/bin:~/bin
 alias dus='du -h | sort -hr | less'
+alias duo='du -smc .[^.]* * | sort -n'
 alias py3='source ~/virtualenvs/py310/bin/activate'
 
 # VLC doesn't like relative paths
